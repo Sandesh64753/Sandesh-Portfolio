@@ -1,0 +1,19 @@
+@use "./mixins" as *;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--display); -webkit-font-smoothing: antialiased; }
+body, button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+button { font: inherit; }
+::selection { color: var(--white); background: var(--terra); }
+:focus-visible { @include focus-ring; }
+.skip-link { position: fixed; z-index: 100; top: 12px; left: 12px; padding: 12px 16px; transform: translateY(-160%); background: var(--ink); color: var(--white); }
+.skip-link:focus { transform: translateY(0); }
+.section-shell { @include content-shell; }
+.eyebrow, .section-label, .project-number, .meta-label, .project-status, .hero-portrait figcaption, .hero-index, .hero-side-note, .scroll-cue, .origin-foot, .discipline-number, .discipline small, .toolbox .meta-label, .lab-notes span, .human-facts span, .human-portrait figcaption, .education-entry>span, .education-entry>b, .contact-coordinate, .archive-number, .archive-stack { @include label-type; }
+h1, h2, h3, p, figure { margin-top: 0; }
+a:focus-visible, button:focus-visible { @include focus-ring; }
+.display-title em, h1 em, .project h3 em { color: var(--terra); font-family: var(--serif); font-weight: 400; letter-spacing: -.045em; }
+

@@ -1,56 +1,36 @@
-# Portfolio
+# Sandesh Vairagar — Portfolio
 
-A simple static portfolio website containing `index.html`, `style.css`, and `script.js`.
+An editorial portfolio following the **Atlas of Becoming** direction. Built with Next.js App Router, JavaScript, SCSS, Framer Motion and Lucide React.
 
-## Overview
+## Run locally
 
-This repository contains a minimal personal portfolio/static site meant to showcase projects, skills and contact information. It's built with plain HTML, CSS and JavaScript and is designed to be easy to edit and deploy.
-
-## Files
-
-- `index.html` — Main HTML page for the portfolio.
-- `style.css` — Styles for the site.
-- `script.js` — Client-side JavaScript for interactive behavior.
-- `README.md` — This file.
-
-## Features
-
-- Responsive, static site (no build step required).
-- Easy to customize: update `index.html`, `style.css`, and `script.js`.
-
-## How to run
-
-The site is static — open `index.html` in your browser to view it. Two common ways:
-
-- Double-click `index.html` in Explorer or open it from the browser (works for most simple uses).
-
-- Serve via a local HTTP server (recommended if you use fetch/XHR or want a realistic environment). From the project root, using PowerShell:
-
-```powershell
-# If you have Python installed
-python -m http.server 8000
-# Then open http://localhost:8000 in your browser
+```sh
+npm install
+npm run dev
 ```
 
-Or, on PowerShell you can open the file directly:
+Open `http://localhost:3000`. Create a production build with `npm run build` and run it with `npm start`.
 
-```powershell
-Start-Process .\index.html
-```
+## Structure
 
-## Development notes
+- `app/layout.js` — root layout, page metadata, Open Graph configuration and Person/ProfilePage JSON-LD.
+- `app/page.js` — server-rendered portfolio content and case studies.
+- `app/globals.scss` — SCSS entry point.
+- `styles/` — variables, mixins, layout, section styles, responsive rules and reduced-motion styles.
+- `components/site-header.jsx` — accessible responsive navigation.
+- `components/reveal.jsx` — reduced-motion-aware section reveals.
+- `public/assets/` — Next Image source assets copied from the supplied originals.
+- `public/llms.txt`, `public/robots.txt` — machine-readable profile and crawler policy.
+- `CREATIVE-DIRECTION.md` — full creative and visual direction.
 
-- Make small edits to `index.html` for content, `style.css` for look-and-feel, and `script.js` for behavior.
-- No build tools required. If you add assets or external libraries, keep them in a sensible subfolder (e.g., `assets/` or `lib/`).
+## Design and performance choices
 
-## Contributing
+Space Grotesk, Instrument Serif and IBM Plex Mono establish the editorial hierarchy. Warm paper, midnight ink, ocean teal and terracotta carry the atlas motif. The page uses server-rendered sections, Next Image optimization and Framer Motion only for subtle reveals and navigation feedback. Native browser scrolling is retained; Lenis was left out because smooth-scroll replacement adds little value to this page and can affect mobile/keyboard behavior.
 
-If you want to suggest improvements, open an issue or submit a pull request with a short description of changes.
+Fonts use Google Fonts with local fallbacks. For strict offline or privacy requirements, self-host licensed WOFF2 files. The supplied photos and project screenshots are preserved in `assets/`; optimized derivatives are copied to `public/assets/` for Next Image.
 
-## License
+## Before public deployment
 
-This repository is provided as-is. Add a license file if you plan to publish or share widely (e.g., MIT).
+Set `NEXT_PUBLIC_SITE_URL` to the confirmed production origin. It enables absolute Open Graph image URLs and should also be used to provide the canonical URL and sitemap. A production browser/Lighthouse audit is still required; the site has not been deployed and no field performance scores are claimed.
 
-## Contact
-
-Author: `Sandesh64753` (GitHub)
+Some academic and project metrics are intentionally omitted while source details are unresolved. See `CREATIVE-DIRECTION.md` for the verification notes.

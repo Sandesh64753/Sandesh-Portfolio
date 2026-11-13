@@ -1,0 +1,51 @@
+# Sandesh Vairagar
+
+> Sandesh Vairagar is a Computer Science and Engineering student specializing in Artificial Intelligence at Nutan Maharashtra Institute of Engineering and Technology (NMIET), in Pimpri-Chinchwad, Maharashtra, India. He builds practical applications across Generative AI, machine learning, computer vision and full-stack software engineering.
+
+## Profile
+
+- Preferred positioning: Aspiring Generative AI Engineer | AI/ML Developer | Full-Stack Developer.
+- Education: B.E. Computer Science and Engineering (Artificial Intelligence), NMIET, 2024–2028.
+- Current interests: Generative AI, LLM applications, retrieval-augmented generation (RAG), agentic AI, AI/ML engineering, deep learning and computer vision.
+- Opportunity: Actively seeking paid internships in Generative AI, AI/ML or related engineering.
+- Contact: [Email](mailto:vairagarsandesh45@gmail.com).
+
+## Featured projects
+
+### ChestVision AI
+
+An educational research prototype for four-class chest X-ray classification, lung segmentation and explainability. The described stack includes Python, TensorFlow/Keras, DenseNet121, U-Net, FastAPI and Docker. The prototype is not a clinical diagnostic tool.
+
+### Product Return Intelligence
+
+A pre-shipment e-commerce return-risk platform with multi-tenant workspaces and analytics separating predictions from verified outcomes. The described stack includes Python, Scikit-learn, Logistic Regression, FastAPI, React and PostgreSQL. Repository: <https://github.com/Sandesh64753/Return-Risk-Intelligence>.
+
+### ForeverBuy.in
+
+A MERN e-commerce platform with a customer storefront and admin dashboard, using React, Node.js, Express, MongoDB, Stripe, Cloudinary and Tailwind CSS.
+
+## Skills
+
+Python, Java, C, C++, JavaScript; Scikit-learn, NumPy, Pandas, TensorFlow/Keras, PyTorch, OpenCV; React, Next.js, Node.js, Express, FastAPI, Flask; MongoDB, PostgreSQL, MySQL; Docker, Git and GitHub. These technologies represent project and learning experience at varying proficiency levels.
+
+## Experience and interests
+
+- Web Development Intern, Kodbud, January–February 2026 (four-week internship; details supplied by Sandesh).
+- Karate practice and purple-belt progression; Kempo competition gold medal as stated in supplied profile.
+- Interests include fitness, travel, emerging technology and software development.
+
+## Profiles
+
+- LinkedIn: <https://www.linkedin.com/in/sandesh-vairagar/>
+- GitHub: <https://github.com/Sandesh64753>
+- LeetCode: <https://leetcode.com/u/Sandesh1548/>
+
+## Portfolio sections
+
+- `#work` — selected project descriptions and interface screenshots.
+- `#blueprint` — skills and disciplines.
+- `#lab` — current learning direction in GenAI and LLM applications.
+- `#about` — personal interests.
+- `#contact` — internship availability and contact links.
+
+Academic score and conflicting ReturnRisk evaluation metrics are intentionally omitted pending verification.

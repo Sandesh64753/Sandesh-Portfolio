@@ -1,0 +1,16 @@
+@mixin label-type {
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+@mixin content-shell {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+}
+
+@mixin focus-ring {
+  outline: 2px solid var(--terra);
+  outline-offset: 4px;
+}

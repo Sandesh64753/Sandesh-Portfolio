@@ -1,0 +1,33 @@
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes portrait-enter {
+  from { opacity: 0; transform: translate3d(0, 18px, 0) rotate(0deg) scale(.975); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) rotate(2.5deg) scale(1); }
+}
+
+@keyframes atlas-drift {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -12px; }
+}
+
+@keyframes orbit-turn {
+  from { transform: rotate(-24deg); }
+  to { transform: rotate(336deg); }
+}
+
+.hero-copy > .eyebrow { animation: hero-fade-up .72s .06s both var(--ease-out); }
+.hero-copy > h1 { animation: hero-fade-up .82s .16s both var(--ease-out); }
+.hero-copy > .hero-intro { animation: hero-fade-up .78s .27s both var(--ease-out); }
+.hero-copy > .hero-actions { animation: hero-fade-up .78s .38s both var(--ease-out); }
+.hero-copy > .availability { animation: hero-fade-up .78s .48s both var(--ease-out); }
+.hero-portrait { animation: portrait-enter .95s .12s both var(--ease-out); }
+.atlas-object { animation: atlas-drift 6s 1s ease-in-out infinite; }
+.orbit-one { animation: orbit-turn 48s linear infinite; }
+.orbit-two { animation: orbit-turn 64s linear infinite reverse; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition-duration: .01ms !important; }
+}
